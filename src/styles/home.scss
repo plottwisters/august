@@ -1,0 +1,151 @@
+#home {
+  position: relative;
+  width: 100vw;
+  margin: 2vw auto;
+  padding: 20px 0 20px;
+  text-align: center;
+  z-index: 100;
+  /* overflow: hidden; */
+}
+
+#title {
+  margin: 0 auto 10px;
+  background: url('../img/title.gif') no-repeat;
+  background-size: 100% auto;
+  width: 93%;
+  padding-bottom: 14%;
+}
+
+  /* #title:hover {
+    background: url('../img/title-hover.gif') no-repeat;
+    background-size: 100% auto;
+  } */
+
+.hero {
+  position: relative;
+  background: url('../img/hero.png') no-repeat center;
+  background-size: 101% auto;
+  width: 100%;
+  padding-bottom: 68%;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+  #floats {
+    position: relative;
+    width: 100%;
+    padding-bottom: 67%;
+    margin-bottom: -67%;
+    transform-style: preserve-3d;
+    z-index: 9;
+  }
+
+  .chat-right, .chat-left, .debris, .trail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform-style: preserve-3d;
+  }
+
+    #folders {
+      position: absolute;
+      top: 79vw;
+      left: 15px;
+      width: 145px;
+      z-index: 100;
+    }
+
+    #email-jenny {
+      position: absolute;
+      top: 85vw;
+      right: 7px;
+      width: 51px;
+      z-index: 100;
+    }
+
+  h4.tagline {
+    font-size: 4vw;
+  }
+
+  .chat-right { transform: translateZ(50px); }
+  .chat-left { transform: translateZ(15px); }
+  .debris { transform: translateZ(80px); }
+  .trail { transform: translateZ(25px); }
+
+#playbookHome {
+  margin: 20px auto 0;
+  width: 93%;
+}
+
+  #playbookHome .modules .block {
+    margin: 0 8px 4px 0;
+    width: calc(33.33% - 8px);
+  }
+
+  #playbookHome .block:nth-child(3n) { margin-right: 0; }
+
+.refresh {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-left: 1px solid black;
+  background: url('../img/refresh.png') no-repeat;
+  background-size: 30px;
+  background-position: 10px 10px;
+}
+
+  .refresh:hover {
+    background: url('../img/refresh-hover.png') no-repeat;
+    background-size: 30px;
+    background-position: 10px 10px;
+  }
+
+@media screen
+    and (min-device-width: 660px)
+    and (min-width: 660px) {
+
+      #home {
+        padding: 10px 0;
+        max-width: 640px;
+      }
+
+      #title { width: 100%; }
+
+      .hero { background-size: 100% auto; }
+
+      #folders {
+        top: 485px;
+        left: 30px;
+      }
+
+      #email-jenny {
+        top: 530px;
+        right: 25px;
+      }
+
+      h4.tagline {
+        display: block;
+        font-size: 21.88px;
+        letter-spacing: 0.015em;
+        margin: 15px 0 10px;
+      }
+
+      h4.tagline .mobile-toggle { display: inline; }
+
+      #playbookHome {
+        margin: 10px auto 0;
+        width: 100%;
+        // border: 1px solid red;
+      }
+
+        #playbookHome .modules .block {
+          border: 2px solid black;
+        	margin: 0 7px 2px 0;
+        	width: calc(33.385% - 9px);
+        }
+
+        #playbookHome .block:nth-child(3n) { margin-right: 0; }
+}

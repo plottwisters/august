@@ -1,0 +1,52 @@
+.block {
+  -webkit-appearance: none;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  line-height: 0;
+}
+
+.modules {
+	margin: 10px auto;
+	width: 100%;
+  text-align: left;
+  // border: 1px solid red;
+}
+
+/* all */
+.modules .block {
+	position: relative;
+	border: 1px solid black;
+	height: 90px; /* will change */
+	margin: 0 4px 0px 0;
+	display: inline-block;
+	width: calc(33.33% - 5px);
+}
+
+	.block:nth-child(3n) { margin-right: 0; }
+
+  .block h2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 7px;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    text-align: center;
+    // border: 1px solid red;
+	}
+
+	.block h3 {
+    display: none;
+		max-width: 120px;
+		font-size: 0.95em;
+	}
+
+.activeActivity {
+  background: #fff000;
+}

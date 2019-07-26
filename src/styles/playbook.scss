@@ -1,0 +1,19 @@
+#playbook {
+  position: relative;
+  width: 290px;
+  margin: 10px auto;
+  padding: 0;
+  text-align: center;
+  z-index: 100;
+  // border: 1px solid red;
+}
+
+@media screen
+		and (min-device-width: 600px)
+		and (min-width: 600px) {
+
+			#playbook {
+				margin: 20px 20px;
+			}
+
+}
