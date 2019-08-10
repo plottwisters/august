@@ -40,11 +40,11 @@
     z-index: 9;
   }
 
-  .chat-right, .chat-left, .debris, .trail {
+  .debris {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 20px;
+    left: 8%;
+    width: 85%;
     transform-style: preserve-3d;
   }
 
